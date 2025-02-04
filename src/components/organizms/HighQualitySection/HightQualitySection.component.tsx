@@ -18,7 +18,7 @@ const HighQualitySection = () => {
           critical thinking skills.
         </p>
         <div className="mt-8">
-          <CustomButton variant="filled" className="bg-red-600 hover:bg-red-500">
+          <CustomButton variant="filled" className="bg-red-600 hover:bg-red-500 shadow-medium shadow-indigo-400">
             Contact Us
           </CustomButton>
         </div>

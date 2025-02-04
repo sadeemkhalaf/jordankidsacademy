@@ -5,5 +5,9 @@ import HighQualitySection from './HighQualitySection/HightQualitySection.compone
 import Hero from './hero/Hero.component';
 import HeroHue from './hero/HeroHue.component';
 import Footer from './footer/footer';
+import GrowthSection from './growthSection/GrowthSection'
+import LearningProcess from './learningProcess/LearningProcess';
+import TestimonialsSection from './testimonialsSection/TestimonialsSection';
+
+export { Navbar, SectionCard, CardList, HighQualitySection, Hero, HeroHue, Footer, GrowthSection, LearningProcess, TestimonialsSection };
  
-export { Navbar, SectionCard, CardList, HighQualitySection, Hero, HeroHue, Footer };

@@ -1,13 +1,19 @@
 "use client";
 
+import {
+  CardList,
+  GrowthSection,
+  HighQualitySection,
+  LearningProcess,
+  TestimonialsSection,
+} from "../components/organizms";
 import { CustomButton } from "../components/atoms";
-import { CardList, HighQualitySection } from "../components/organizms";
 import "./../styles/globals.css";
 
 export default function Home() {
   return (
-    <div className="font-quicksand">
-      <div className="container mx-auto flex flex-col">
+    <div className="font-quicksand w-screen">
+      <div className="flex flex-col">
         {/* Hero Section */}
         <section className="relative w-full h-[300px] md:h-[560px] my-24 bg-no-repeat bg-center bg-cover bg-[url('/ELEMENTS-xs.png')] md:bg-[url('/ELEMENTS.png')]">
           <div className="mx-auto px-4 mt-20 md:mt-24 flex flex-col justify-center items-center text-center">
@@ -48,8 +54,20 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="relative mt-12 md:mt-24 mb-32 md:mb-64">
+        <section className="relative mt-12 md:mt-24 mb-16 md:mb-32">
           <HighQualitySection />
+        </section>
+
+        <section className="mb-16 md:mb-32 w-full">
+          <GrowthSection />
+        </section>
+
+        <section className="mb-16 md:mb-32 w-full">
+          <LearningProcess />
+        </section>
+
+        <section className="mb-16 md:mb-32 w-full">
+          <TestimonialsSection />
         </section>
       </div>
     </div>
