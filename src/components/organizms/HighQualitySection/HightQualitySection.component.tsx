@@ -1,6 +1,6 @@
 import React from "react";
 import { CustomButton } from "../../atoms";
-import Image from 'next/image';
+import Image from "next/image";
 
 const HighQualitySection = () => {
   return (
@@ -25,12 +25,15 @@ const HighQualitySection = () => {
       </div>
 
       {/* Right Image */}
+      <div className="md:w-1/2 flex items-center justify-center relative my-12 md:my-0">
           <Image
             src="/learning-toys.png" // Replace with your actual image path
             alt="Educational Materials"
-            layout="fill"
-            objectFit="cover"
+            height={400}
+            width={400}
+            className="w-full h-full object-cover"
           />
+      </div>
     </section>
   );
 };

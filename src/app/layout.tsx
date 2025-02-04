@@ -2,10 +2,10 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import { Footer, Navbar } from "src/components/organizms";
 import Head from "next/head";
-import { Footer, Navbar } from "../components/organizms";
-import "./styles/hero.css";
-import "./global.css";
+import "./../styles/hero.css";
+import "./../styles/globals.css";
 
 export default function RootLayout({
   children,
@@ -24,7 +24,7 @@ export default function RootLayout({
   }, []);
 
   return (
-    <html lang="en">
+<html lang="en">
       <Head>
         <link
           rel="stylesheet"
@@ -32,7 +32,7 @@ export default function RootLayout({
       </Head>
       <body className="min-h-screen overflow-auto">
         {isLoading ? (
-          <div className="loader-container fixed inset-0 flex justify-center items-center bg-yellow-400 z-50">
+          <div className="loader-container inset-0 flex justify-center items-center bg-yellow-400 z-50">
             <Image
               className="logo"
               src={"/logo.png"}
@@ -44,7 +44,7 @@ export default function RootLayout({
         ) : (
           <div className="flex flex-col min-h-screen">
             <Navbar />
-            <main className="pt-[50px] flex-grow">{children}</main>
+            <main className="flex-grow">{children}</main>
             <Footer />
           </div>
         )}
