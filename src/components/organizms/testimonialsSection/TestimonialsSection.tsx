@@ -1,35 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-import "swiper/css/navigation";
-import "swiper/css";
-
-const testimonials = [
-  {
-    id: 1,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
-    name: "Shany White",
-    avatar: "https://via.placeholder.com/50", // Replace with actual image
-  },
-  {
-    id: 2,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
-    name: "Judy Robert",
-    avatar: "https://via.placeholder.com/50", // Replace with actual image
-  },
-  {
-    id: 3,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
-    name: "Shany White",
-    avatar: "https://via.placeholder.com/50", // Replace with actual image
-  },
-  {
-    id: 4,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
-    name: "Judy Robert",
-    avatar: "https://via.placeholder.com/50", // Replace with actual image
-  },
-];
+import { testimonials } from "@/src/common/constants";
 
 const TestimonialsSection = () => {
   return (

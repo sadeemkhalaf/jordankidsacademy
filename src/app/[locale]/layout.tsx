@@ -2,10 +2,24 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import { Quicksand, Courgette } from "next/font/google";
 import { Footer, Navbar } from "src/components/organizms";
 import Head from "next/head";
-import "./../styles/hero.css";
-import "./../styles/globals.css";
+import "../../styles/hero.css";
+import "../../styles/globals.css";
+import "swiper/css/navigation";
+import "swiper/css";
+
+const quicksand = Quicksand({
+  subsets: ["latin"],
+  variable: "--font-quicksand",
+});
+
+const courgette = Courgette({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-courgette",
+});
 
 export default function RootLayout({
   children,
@@ -30,7 +44,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </Head>
-      <body className="min-h-screen overflow-auto">
+      <body className={`min-h-screen overflow-auto ${quicksand.className} ${courgette.className}`}>
         {isLoading ? (
           <div className="loader-container inset-0 flex justify-center items-center bg-yellow-400 z-50">
             <Image

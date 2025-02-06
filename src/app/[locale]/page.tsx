@@ -5,10 +5,11 @@ import {
   GrowthSection,
   HighQualitySection,
   LearningProcess,
+  SafetySection,
   TestimonialsSection,
-} from "../components/organizms";
-import { CustomButton } from "../components/atoms";
-import "./../styles/globals.css";
+} from "../../components/organizms";
+import { CustomButton } from "../../components/atoms";
+import "./../../styles/globals.css";
 
 export default function Home() {
   return (
@@ -42,14 +43,16 @@ export default function Home() {
                 <span className="text-orange-500 italic"> program</span> <br />
                 tailored for babies and toddlers
               </h1>
-              <CustomButton
-                variant="outlined"
-                onClick={() => console.log("Outlined Clicked!")}
-              >
-                Register Now for 2025
-              </CustomButton>
+              <div className="flex w-full justify-center items-center mt-8 md:mt-0">
+                <CustomButton
+                  variant="outlined"
+                  onClick={() => console.log("Outlined Clicked!")}
+                >
+                  Register Now for 2025
+                </CustomButton>
+              </div>
             </div>
-            <div className="my-6" />
+            <div className="my-0 md:my-6" />
             <CardList />
           </div>
         </section>
@@ -68,6 +71,10 @@ export default function Home() {
 
         <section className="mb-16 md:mb-32 w-full">
           <TestimonialsSection />
+        </section>
+
+        <section className="mb-16 md:mb-32 w-full">
+          <SafetySection />
         </section>
       </div>
     </div>

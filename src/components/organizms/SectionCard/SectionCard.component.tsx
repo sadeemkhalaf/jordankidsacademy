@@ -1,6 +1,15 @@
 import React from "react";
 
-const SectionCard = ({
+interface SectionCardProps {
+  title: string;
+  subtitle: string;
+  description: string;
+  icon: string;
+  bgColor: string;
+  cornerShape: string;
+}
+
+const SectionCard: React.FC<SectionCardProps> = ({
   title,
   subtitle,
   description,
@@ -10,7 +19,8 @@ const SectionCard = ({
 }) => {
   return (
     <div
-      className={`relative flex flex-col w-full md:w-72 h-64 md:h-80 p-6 rounded-[30px] text-black ${bgColor}`}
+      className={`relative flex flex-col w-full md:w-72 h-52 md:h-96 p-6 rounded-[30px] text-black`}
+      style={{backgroundColor: bgColor}}
     >
       {/* Corner Shape */}
       <div className="absolute top-0 right-0 -z-100">
