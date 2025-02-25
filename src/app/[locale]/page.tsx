@@ -6,9 +6,8 @@ import {
   HighQualitySection,
   LearningProcess,
   SafetySection,
-  TestimonialsSection,
 } from "../../components/organizms";
-import { CustomButton } from "../../components/atoms";
+import { AnimatedButton, CustomButton } from "../../components/atoms";
 import "./../../styles/globals.css";
 
 export default function Home() {
@@ -31,26 +30,26 @@ export default function Home() {
             >
               Learn more
             </CustomButton>
+            <AnimatedButton hoverText="hello" initialText="original" />
           </div>
         </section>
 
         {/* Interactive Program Section */}
         <section className="relative my-12 md:mb-32 md:px-32">
           <div className="px-4 flex flex-col text-black">
-            <div className="grid grid-cols-1 col md:flex md:justify-between">
+            <div className="flex-1 md:flex md:justify-between flex w-full items-center">
               <h1 className="text-2xl md:text-3xl font-normal leading-tight text-gray-900">
                 Interactive
                 <span className="text-orange-500 italic"> program</span> <br />
                 tailored for babies and toddlers
               </h1>
-              <div className="flex w-full justify-center items-center mt-8 md:mt-0">
                 <CustomButton
                   variant="outlined"
                   onClick={() => console.log("Outlined Clicked!")}
+                  className="h-11"
                 >
                   Register Now for 2025
                 </CustomButton>
-              </div>
             </div>
             <div className="my-0 md:my-6" />
             <CardList />
@@ -67,10 +66,6 @@ export default function Home() {
 
         <section className="mb-16 md:mb-32 w-full">
           <LearningProcess />
-        </section>
-
-        <section className="mb-16 md:mb-32 w-full">
-          <TestimonialsSection />
         </section>
 
         <section className="mb-16 md:mb-32 w-full">

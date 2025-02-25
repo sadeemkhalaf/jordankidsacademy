@@ -19,7 +19,7 @@ const SectionCard: React.FC<SectionCardProps> = ({
 }) => {
   return (
     <div
-      className={`relative flex flex-col w-full md:w-72 h-52 md:h-96 p-6 rounded-[30px] text-black`}
+      className={`relative flex flex-col items-start w-full md:w-72 md:h-96 p-6 rounded-[30px] text-black`}
       style={{backgroundColor: bgColor}}
     >
       {/* Corner Shape */}

@@ -5,7 +5,7 @@ import { CustomButton } from "../../atoms";
 const GrowthSection = () => {
   return (
     <div
-      className="relative w-full px-6 md:px-16 md:py-24 flex flex-col md:flex-row items-center justify-end py-12"
+      className="relative w-full px-6 md:px-16 md:py-24 flex flex-col md:flex-row items-center justify-end pt-12"
       style={{ backgroundColor: "#64AC3E" }}
     >
       {/* Right Side - Text Content */}
@@ -23,7 +23,7 @@ const GrowthSection = () => {
           growth while ensuring a foundation of fun and safety for every family.
         </p>
 
-        <div className="w-full flex justify-end mt-8">
+        <div className="w-full flex justify-center md:justify-end my-8">
           <CustomButton
             variant="outlined-filled"
             className="text-purple-500 border-purple-500"
@@ -34,7 +34,7 @@ const GrowthSection = () => {
       </div>
       {/* Left Side - Image */}
 
-      <div className="absolute left-0 w-full md:w-1/2 h-full flex justify-center md:justify-start bottom-0">
+      <div className="md:absolute md:left-0 w-full md:w-1/2 h-full flex justify-center md:justify-start md:bottom-0">
         <Image
           src="/baby.png" // Replace with actual image
           alt="Child dressed as pilot"

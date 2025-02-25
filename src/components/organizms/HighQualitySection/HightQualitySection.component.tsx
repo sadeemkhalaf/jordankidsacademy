@@ -17,7 +17,7 @@ const HighQualitySection = () => {
           interactive activities, your child will develop independence and
           critical thinking skills.
         </p>
-        <div className="mt-8">
+        <div className="mt-8 w-full justify-center flex md:justify-start">
           <CustomButton variant="filled" className="bg-red-600 hover:bg-red-500 shadow-medium shadow-indigo-400">
             Contact Us
           </CustomButton>

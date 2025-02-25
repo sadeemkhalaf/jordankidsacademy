@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { Quicksand, Courgette } from "next/font/google";
+import { Quicksand, Courgette, Mansalva } from "next/font/google";
 import { Footer, Navbar } from "src/components/organizms";
 import Head from "next/head";
 import "../../styles/hero.css";
@@ -19,6 +19,12 @@ const courgette = Courgette({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-courgette",
+});
+
+const mansalva = Mansalva({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-mansalva",
 });
 
 export default function RootLayout({
@@ -44,15 +50,15 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </Head>
-      <body className={`min-h-screen overflow-auto ${quicksand.className} ${courgette.className}`}>
+      <body className={`min-h-screen overflow-auto ${quicksand.className} ${courgette.className} ${mansalva.className}`}>
         {isLoading ? (
           <div className="loader-container inset-0 flex justify-center items-center bg-yellow-400 z-50">
             <Image
-              className="logo"
               src={"/logo.png"}
               height={145}
               width={234}
               alt="Logo"
+              className="logo"
             />
           </div>
         ) : (

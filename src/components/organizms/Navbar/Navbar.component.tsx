@@ -13,7 +13,7 @@ const NavBar = () => {
         {/* Logo */}
 
         <Link href="/" className="text-2xl font-bold text-gray-800">
-          <img src="/logo.png" alt="Jordan Kids Academy" className="h-[92px]" />
+          <img src="/logo.png" alt="Jordan Kids Academy" className="h-16 md:h-[92px]" />
         </Link>
 
         {/* Hamburger Menu for Mobile */}
