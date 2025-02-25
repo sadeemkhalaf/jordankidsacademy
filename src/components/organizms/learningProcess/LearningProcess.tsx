@@ -11,25 +11,25 @@ const LearningProcess = () => {
     {
       id: 2,
       label: "Art & Culture",
-      color: "#6050DC",
+      color: "#FDF240",
       imgSrc: "/icons/gif/art.gif",// Replace with actual Art & Culture image
     },
     {
       id: 3,
       label: "Reading",
-      color: "#E1306C",
+      color: "#FDF260",
       imgSrc: "/icons/gif/reading.gif",// Replace with actual Art & Culture image
     },
     {
       id: 4,
       label: "Cooking",
-      color: "#64093E",
+      color: "#FDF280",
       imgSrc: "/icons/gif/cooking.gif",// Replace with actual Art & Culture image
     },
     {
       id: 5,
       label: "Montessori",
-      color: "#64AC3E",
+      color: "#FDF300",
       imgSrc: "/icons/gif/kids.gif",// Replace with actual Art & Culture image
     },
   ];
@@ -60,7 +60,7 @@ const LearningProcess = () => {
         <div className="font-[mansalva] text-7xl md:text-8xl md:text-start text-[#0a303a] md:px-28">
           What we <br className="hidden md:visible" /> offer
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mt-12 px-4 md:px-16">
+        <div className="grid grid-cols-2 md:flex md:flex-row gap-8 mt-12 px-4 md:px-16 md:flex-wrap">
           {shapes.map((shape) => (
             <div key={shape.id} className="flex flex-col items-center relative">
               {/* Shape Container with SVG */}
