@@ -24,13 +24,7 @@ export default function Home() {
               for your child
             </h1>
             <div className="my-6" />
-            <CustomButton
-              variant="filled"
-              className="bg-red-600 h-[55px] w-[189px] animate-bounce-short"
-            >
-              Learn more
-            </CustomButton>
-            <AnimatedButton hoverText="hello" initialText="original" />
+            <AnimatedButton hoverText="Book a tour" initialText="Learn more" className="bg-red-600 h-[55px] w-[189px] animate-bounce-short" />
           </div>
         </section>
 

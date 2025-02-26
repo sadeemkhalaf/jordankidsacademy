@@ -15,7 +15,7 @@ const SafetySection = () => {
             <div key={feature.id} className="flex items-center space-x-6 text-left">
               {/* Image Placeholder */}
               <div
-                className="w-24 h-24 md:w-32 md:h-32 bg-gray-300 rounded-xl flex justify-center items-center"
+                className="w-24 h-24 md:w-[200px] md:h-[200px] bg-gray-300 rounded-xl flex justify-center items-center"
                 style={{
                   backgroundImage: `url(${feature.image})`,
                   backgroundSize: "cover",

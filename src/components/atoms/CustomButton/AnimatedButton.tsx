@@ -14,7 +14,7 @@ const AnimatedButton = ({
 }) => {
   return (
     <motion.button
-      className={`relative overflow-hidden px-6 py-3 text-white bg-blue-600 rounded-lg font-semibold ${className}`}
+      className={`relative overflow-hidden px-6 py-3 text-white rounded-lg font-semibold ${className}`}
       initial="rest"
       whileHover="hover"
       whileTap="pressed"
