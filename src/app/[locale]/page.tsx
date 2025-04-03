@@ -2,6 +2,7 @@
 
 import {
   CardList,
+  ContactUsForm,
   GrowthSection,
   HighQualitySection,
   LearningProcess,
@@ -24,7 +25,11 @@ export default function Home() {
               for your child
             </h1>
             <div className="my-6" />
-            <AnimatedButton hoverText="Book a tour" initialText="Learn more" className="bg-red-600 h-[55px] w-[189px] animate-bounce-short" />
+            <AnimatedButton
+              hoverText="Book a tour"
+              initialText="Learn more"
+              className="bg-red-600 h-[55px] w-[189px] animate-bounce-short"
+            />
           </div>
         </section>
 
@@ -37,13 +42,13 @@ export default function Home() {
                 <span className="text-orange-500 italic"> program</span> <br />
                 tailored for babies and toddlers
               </h1>
-                <CustomButton
-                  variant="outlined"
-                  onClick={() => console.log("Outlined Clicked!")}
-                  className="h-11"
-                >
-                  Register Now for 2025
-                </CustomButton>
+              <CustomButton
+                variant="outlined"
+                onClick={() => console.log("Outlined Clicked!")}
+                className="h-11"
+              >
+                Register Now for 2025
+              </CustomButton>
             </div>
             <div className="my-0 md:my-6" />
             <CardList />
@@ -64,6 +69,10 @@ export default function Home() {
 
         <section className="mb-16 md:mb-32 w-full">
           <SafetySection />
+        </section>
+
+        <section className="mb-16 md:mb-32 w-full">
+          <ContactUsForm />
         </section>
       </div>
     </div>
