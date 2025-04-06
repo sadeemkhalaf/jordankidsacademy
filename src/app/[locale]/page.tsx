@@ -16,7 +16,7 @@ export default function Home() {
     <div className="font-quicksand w-screen">
       <div className="flex flex-col">
         {/* Hero Section */}
-        <section className="relative w-full h-[300px] md:h-[560px] my-24 bg-no-repeat bg-center bg-cover bg-[url('/ELEMENTS-xs.png')] md:bg-[url('/ELEMENTS.png')]">
+        <section className="relative w-full h-[300px] md:h-[560px] my-24 bg-no-repeat bg-center bg-contain bg-[url('/ELEMENTS-xs.png')] md:bg-[url('/ELEMENTS.png')]">
           <div className="mx-auto px-4 mt-20 md:mt-24 flex flex-col justify-center items-center text-center">
             <h1 className="text-4xl md:text-7xl font-bold leading-tight text-gray-900">
               The best place to <br />
@@ -34,10 +34,10 @@ export default function Home() {
         </section>
 
         {/* Interactive Program Section */}
-        <section className="relative my-12 md:mb-32 md:px-32">
+        <section className="relative my-6 md:mb-32 md:px-32">
           <div className="px-4 flex flex-col text-black">
-            <div className="flex-1 md:flex md:justify-between flex w-full items-center">
-              <h1 className="text-2xl md:text-3xl font-normal leading-tight text-gray-900">
+            <div className="flex flex-col md:flex-1 w-full items-center">
+              <h1 className="text-2xl md:text-3xl font-normal leading-tight text-gray-900 mb-6 md:mb-0">
                 Interactive
                 <span className="text-orange-500 italic"> program</span> <br />
                 tailored for babies and toddlers
@@ -55,23 +55,23 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="relative mt-12 md:mt-24 mb-16 md:mb-32">
+        <section className="relative md:mt-24 md:mb-32">
           <HighQualitySection />
         </section>
 
-        <section className="mb-16 md:mb-32 w-full">
+        <section className="mb-4 md:mb-32 w-full">
           <GrowthSection />
         </section>
 
-        <section className="mb-16 md:mb-32 w-full">
+        <section className="mb-4 md:mb-32 w-full">
           <LearningProcess />
         </section>
 
-        <section className="mb-16 md:mb-32 w-full">
+        <section className="mb-4 md:mb-32 w-full">
           <SafetySection />
         </section>
 
-        <section className="mb-16 md:mb-32 w-full">
+        <section className="mb-4 md:mb-32 w-full">
           <ContactUsForm />
         </section>
       </div>
