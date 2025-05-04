@@ -20,17 +20,17 @@ const Footer = () => {
               <h3 className="font-semibold text-gray-800">Connect with us</h3>
               <ul className="mt-4 space-x-2 flex-row flex">
                 <li>
-                  <Link href="/facebook">Facebook</Link>
+                  <Link href="https://www.facebook.com/jordan.k.nursery/?locale=ar_AR">Facebook</Link>
                 </li>
                 <li>
-                  <Link href="/instagram">Instagram</Link>
+                  <Link href="https://www.instagram.com/jordan_kids_academy/?hl=en">Instagram</Link>
                 </li>
               </ul>
             </div>
           </div>
 
           {/* Newsletter Subscription */}
-          <div className="w-full md:w-1/3 lg:w-1/4">
+          {/* <div className="w-full md:w-1/3 lg:w-1/4">
             <h3 className="font-semibold text-gray-800">Join our Newsletter</h3>
             <div className="mt-4 flex">
               <input
@@ -42,12 +42,12 @@ const Footer = () => {
                 →
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Copyright */}
         <div className="mt-4 text-center text-xs text-gray-500">
-          © 2024 All Rights Reserved
+          © 2025 All Rights Reserved
         </div>
       </div>
     </footer>
