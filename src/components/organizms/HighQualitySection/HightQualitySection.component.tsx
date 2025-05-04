@@ -1,6 +1,6 @@
 import React from "react";
-import { CustomButton } from "../../atoms";
 import Image from "next/image";
+import { CustomButton } from "../../atoms";
 
 const HighQualitySection = () => {
   return (
