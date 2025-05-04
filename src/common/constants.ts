@@ -83,7 +83,7 @@ export const testimonials = [
     {
       id: 4,
       title: "Health & Emergency Ready",
-      description: "Regular doctor visits, first-aid-trained staff, and fully stocked first-aid kits are always available to address any health concerns immediately.",
+      description: "First-aid-trained staff, and fully stocked first-aid kits are always available to address any health concerns immediately.",
       image: "https://via.placeholder.com/100", // Replace with actual image
     },
   ];
